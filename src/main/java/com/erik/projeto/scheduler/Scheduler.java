@@ -45,7 +45,8 @@ public class Scheduler {
 		
 		List<Booking> bookignsBookedLastWeek= bookingRepository.findByDateTimeBetween( FirstDayOfLastWeek, LastDayOfLastWeek );
 
-		//EmailSender enviar e-amils nessa melda
+		//TODO
+		//EmailSender
 	
 	
 	}
