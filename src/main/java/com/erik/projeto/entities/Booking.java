@@ -18,7 +18,6 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 import com.erik.projeto.enums.BookingStatus;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-
 @Entity       
 @Table(name = "booking")
 public class Booking implements Serializable {

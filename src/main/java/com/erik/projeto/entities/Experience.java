@@ -16,7 +16,6 @@ import javax.persistence.Table;
 @Table(name = "experience")
 public class Experience implements Serializable {
 
-
 	private static final long serialVersionUID = 3L;
 
 

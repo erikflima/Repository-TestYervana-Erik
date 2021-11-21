@@ -9,7 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-
 @Entity                                               
 @Table(name = "additionalGuest")                       
 public class AdditionalGuest implements Serializable {

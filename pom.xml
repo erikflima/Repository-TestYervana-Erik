@@ -15,7 +15,15 @@
 	<version>1.0.0-SNAPSHOT</version>
 
 	<properties>
+	
 		<java.version>1.8</java.version>
+		
+		 <!-- Aqui eu defino qual versao das bibliotecas do Thymeleaf eu quero baixar para o meu projeto. Pois mais abaixo no codigo, eu coloquei algumas dependencias do Thymeleaf. -->       
+        <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
+        <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+        <thymeleaf-extras-data-attribute.version>2.0.1</thymeleaf-extras-data-attribute.version>
+        <thymeleaf-extras-java8time.version>3.0.0.RELEASE</thymeleaf-extras-java8time.version>
+        
 	</properties>	
 
 
@@ -60,6 +68,32 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+		<dependency>
+		    <groupId>joda-time</groupId>
+		    <artifactId>joda-time</artifactId>
+		    <version>2.10.13</version>
+		</dependency>
+
+		<!-- E-mail sender -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+ 
+ 
+		<!-- Libraries needed to use thymeleaf to create html pages(for the email sender) in the project. -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-java8time</artifactId>
+        </dependency>	 
+ 
+        
 	</dependencies>
 
 

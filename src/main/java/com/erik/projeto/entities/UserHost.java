@@ -13,7 +13,6 @@ import javax.persistence.Table;
 @Table(name = "user_host")
 public class UserHost  implements Serializable{
 
-	
 	private static final long serialVersionUID = 5L;
 
 	@Id                                              

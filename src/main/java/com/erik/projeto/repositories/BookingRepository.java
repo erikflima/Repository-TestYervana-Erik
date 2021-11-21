@@ -6,8 +6,7 @@ import com.erik.projeto.entities.Booking;
 
 public interface BookingRepository extends JpaRepository<Booking, Long> {
 	
-	List<Booking> findByDateTimeAfter( Date dateTime ); 
-	
-	List<Booking> findByTransactionDateAfter( Date transactionDate ); 	
+	List<Booking> findByDateTimeAfter( Date dateTime ); 	
 
+	List<Booking> findByDateTimeBetween( Date startDate, Date endDate );    
 }

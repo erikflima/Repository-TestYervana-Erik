@@ -7,6 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
 import com.erik.projeto.entities.AdditionalGuest;
 import com.erik.projeto.entities.Booking;
 import com.erik.projeto.entities.Experience;
@@ -22,7 +24,8 @@ import com.erik.projeto.repositories.UserHostRepository;
 import com.erik.projeto.repositories.UserRepository;
 
 
-@SpringBootApplication 
+@SpringBootApplication
+@EnableScheduling
 public class TestYervanaApplication {
 
 	
@@ -52,7 +55,7 @@ public class TestYervanaApplication {
 
 	
 	@Bean
-	public CommandLineRunner commandLineRunner() {
+	public CommandLineRunner commandLineRunner(){
 			
 		return args -> {
 
